@@ -3,11 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package manejodowhile;
+package ciclodowhile;
+
+import java.util.Scanner;
 
 /**
  *
- * @author jhand
+ * @author cavargas10
  */
 public class CicloDos {
 
@@ -15,17 +17,23 @@ public class CicloDos {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in); 
         // TODO code application logic here
         int contador = 1;
         String cadena = "";
-        int tabla = 10;
-        String cadenaTmp = "";
+        int tabla = 0;
+        
+        System.out.printf("Ingrese el valor: \n");
+        tabla = entrada.nextInt();
+        
         do{ 
             int valor = contador * tabla;
             cadena = String.format("%s%d * %d = %d\n", cadena, tabla, contador,
                     valor);
             contador = contador + 1;
-        }while (contador<5) ;
+            
+        }while (contador <= 5) ;
         
         System.out.printf("%s", cadena);
         

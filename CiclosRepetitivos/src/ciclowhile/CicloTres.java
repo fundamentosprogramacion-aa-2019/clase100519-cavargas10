@@ -7,25 +7,22 @@ package ciclowhile;
 
 /**
  *
- * @author reroes
+ * @author cavargas10
  */
-public class CicloDos {
-    /**
-     * @param args the command line arguments
-     */
+public class CicloTres {
+    
     public static void main(String[] args) {
-        // TODO code application logic here
         
-        int limite = 10;
         int contador = 1;
+        int limite = 5;
         int suma = 0;
+        
+        System.out.printf("%s", "La suma de: \n");
         while (contador <= limite){
             suma = suma + contador;
-            System.out.printf("Contador %d\n", contador);
-            contador = contador + 1;
+            System.out.printf("%d\n", contador);
+            contador = contador + 1;   
         }
-        
-        System.out.printf("La suma final es %d\n", suma);
-        
+        System.out.printf("Tiene un resultado de: %d\n", suma);
     }
 }
